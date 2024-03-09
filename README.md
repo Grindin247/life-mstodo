@@ -1,2 +1,2 @@
 # life-mstodo
-The service is a part of the Family of LIFE services. life-mstodo provides an interface into a personal Microsoft TODO list.
+This service is a part of a family of Life Integration Framework and Ecosystem (LIFE) services. life-mstodo provides your LIFE system with an interface to access a personal Microsoft TODO list.
