@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Simple API
+  version: 1.0.0
+servers:
+- url: http://localhost:7777
+paths:
+  /list/{name}:
+    get:
+      description: Get todo list by name
+      parameters:
+      - description: Name of the list
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  type: string
+                type: array
+          description: OK
+      summary: Get todo list
+      tags:
+      - List
+components:
+  schemas: {}
